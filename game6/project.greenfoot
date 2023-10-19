@@ -1,5 +1,6 @@
 #Greenfoot project file
 class.BU.image=pumpkin.png
+class.mushroom.image=mushroom.png
 class.seAl.image=seal.png
 editor.fx.0.height=0
 editor.fx.0.width=0
@@ -53,5 +54,5 @@ target4.y=0
 version=3.0.0
 width=825
 world.lastInstantiated=MyWorld
-xPosition=956
-yPosition=184
+xPosition=873
+yPosition=268

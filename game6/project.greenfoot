@@ -1,5 +1,6 @@
 #Greenfoot project file
 class.BU.image=pumpkin.png
+class.player.image=plane.png
 class.seAl.image=seal.png
 dependency1.from=MyWorld
 dependency1.to=player
@@ -8,7 +9,7 @@ editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
-height=1047
+height=560
 package.numDependencies=1
 package.numTargets=5
 project.charset=UTF-8
@@ -61,7 +62,7 @@ target5.width=80
 target5.x=0
 target5.y=0
 version=3.0.0
-width=974
+width=1007
 world.lastInstantiated=MyWorld
-xPosition=953
-yPosition=0
+xPosition=752
+yPosition=310

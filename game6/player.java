@@ -19,10 +19,10 @@ public class player extends Actor
         int x = getX();
         int y = getY();
         if( Greenfoot.isKeyDown( "left" ) ){
-            setLocation( x-3,y );
+            setLocation( x-2,y );
         }
         if( Greenfoot.isKeyDown( "right" ) ){
-            setLocation( x+3,y );
+            setLocation( x+2,y );
         }
         if( Greenfoot.isKeyDown( "up" ) ){
             setLocation( x,y-3 );

@@ -1,7 +1,10 @@
 #Greenfoot project file
+<<<<<<< HEAD
 class.BU.image=pumpkin.png
 class.player.image=plane.png
 class.seAl.image=seal.png
+=======
+>>>>>>> 85dc5e311563594744cfd78e6b11f01376c49a1b
 class.tate.image=turtle.png
 editor.fx.0.height=0
 editor.fx.0.width=0
@@ -9,7 +12,11 @@ editor.fx.0.x=0
 editor.fx.0.y=0
 height=1056
 package.numDependencies=0
+<<<<<<< HEAD
 package.numTargets=5
+=======
+package.numTargets=6
+>>>>>>> 85dc5e311563594744cfd78e6b11f01376c49a1b
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -25,42 +32,72 @@ readme.x=10
 readme.y=10
 simulation.speed=50
 target1.height=50
+<<<<<<< HEAD
 target1.name=BU
+=======
+target1.name=game
+>>>>>>> 85dc5e311563594744cfd78e6b11f01376c49a1b
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=80
 target1.x=0
 target1.y=0
 target2.height=50
+<<<<<<< HEAD
 target2.name=seAl
+=======
+target2.name=BU
+>>>>>>> 85dc5e311563594744cfd78e6b11f01376c49a1b
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=80
 target2.x=0
 target2.y=0
 target3.height=50
+<<<<<<< HEAD
 target3.name=tate
+=======
+target3.name=seAl
+>>>>>>> 85dc5e311563594744cfd78e6b11f01376c49a1b
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=80
 target3.x=0
 target3.y=0
 target4.height=50
+<<<<<<< HEAD
 target4.name=MyWorld
+=======
+target4.name=tate
+>>>>>>> 85dc5e311563594744cfd78e6b11f01376c49a1b
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=80
 target4.x=0
 target4.y=0
 target5.height=50
+<<<<<<< HEAD
 target5.name=player
+=======
+target5.name=mushroom
+>>>>>>> 85dc5e311563594744cfd78e6b11f01376c49a1b
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=80
 target5.x=0
 target5.y=0
+<<<<<<< HEAD
+=======
+target6.height=50
+target6.name=MyWorld
+target6.showInterface=false
+target6.type=ClassTarget
+target6.width=80
+target6.x=0
+target6.y=0
+>>>>>>> 85dc5e311563594744cfd78e6b11f01376c49a1b
 version=3.0.0
 width=1936
 world.lastInstantiated=MyWorld
-xPosition=0
-yPosition=0
+xPosition=13
+yPosition=462

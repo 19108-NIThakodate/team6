@@ -12,8 +12,23 @@ public class player extends Actor
      * Act - do whatever the player wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
     public void act() 
     {
-        // Add your action code here.
+        setRotation(270);
+        int x = getX();
+        int y = getY();
+        if( Greenfoot.isKeyDown( "left" ) ){
+            setLocation( x-3,y );
+        }
+        if( Greenfoot.isKeyDown( "right" ) ){
+            setLocation( x+3,y );
+        }
+        if( Greenfoot.isKeyDown( "up" ) ){
+            setLocation( x,y-3 );
+        }
+        if( Greenfoot.isKeyDown( "down" ) ){
+            setLocation( x,y+3 );
+        }// Add your action code here.
     }    
 }

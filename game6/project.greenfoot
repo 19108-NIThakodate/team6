@@ -10,11 +10,19 @@ dependency2.from=MyWorld
 dependency2.to=player
 dependency2.type=UsesDependency
 editor.fx.0.height=739
+<<<<<<< HEAD
 editor.fx.0.width=814
 editor.fx.0.x=770
 editor.fx.0.y=81
 height=1047
 package.numDependencies=2
+=======
+editor.fx.0.width=816
+editor.fx.0.x=552
+editor.fx.0.y=100
+height=560
+package.numDependencies=1
+>>>>>>> 65f68aa0aa4a1e2591c2a7ff028203d444120380
 package.numTargets=6
 project.charset=UTF-8
 publish.hasSource=false

@@ -35,10 +35,11 @@ public class game extends World
     
     // control spawning.
     private void initializeSpawnPatterns(){
-        spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 50));
-        spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 70));
-        spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 90));
-        spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 110));
+        spawnPatterns.add(new SpawnPattern(0, 0, 100, 100, 1, false));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 50, false));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 70, false));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 90, false));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 110, true));
     }
     
     private void spawnEnemy(){
@@ -51,10 +52,14 @@ public class game extends World
                 int pattern = currentPattern.getPattern();
                 int spawnX = currentPattern.getSpawnX();
                 int spawnY = currentPattern.getSpawnY();
+                boolean drop_item = currentPattern.getDrop_item();
                 
                 switch(enemyType){
+                case 0: //player
+                    addObject(new player(), spawnX, spawnY);
+                break;
                 case 1: //Enemy_01
-                    addObject(new Enemy_01(pattern), spawnX, spawnY);
+                    addObject(new Enemy_01(pattern, drop_item), spawnX, spawnY);
                 break;
                 }
                 countSpawnTable++;           

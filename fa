@@ -1,0 +1,219 @@
+[33mcommit b58f9444335d592935c8af4b1ebe39d3343767c5[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: e7bd350 5a38ccd
+Author: kikuchitakuto <19059@hakodate.kosen-ac.jp>
+Date:   Thu Nov 2 10:10:28 2023 +0900
+
+    適当なコメント
+
+[33mcommit e7bd350c38243c0eb79912e385c3f90e8ac49ab4[m
+Author: kikuchitakuto <19059@hakodate.kosen-ac.jp>
+Date:   Thu Nov 2 10:09:30 2023 +0900
+
+    適当なコメント
+
+[33mcommit 5a38ccd8f4431ae0eaa66571e8dd0606831dfc0e[m
+Author: kidachi-y <19062@hakodate.kosen-ac.jp>
+Date:   Thu Nov 2 10:04:30 2023 +0900
+
+    Cが自機移動追加
+
+[33mcommit c7e9f6d90a09e5956faeafacafc212687cd9e627[m
+Merge: 47c54cd 0379443
+Author: kidachi-y <19062@hakodate.kosen-ac.jp>
+Date:   Thu Nov 2 10:00:23 2023 +0900
+
+    Merge branch 'main' of github.com:19108-NIThakodate/team6
+
+[33mcommit 47c54cd2cd5181d6530718dedce3ee8683047a0f[m
+Author: kidachi-y <19062@hakodate.kosen-ac.jp>
+Date:   Thu Nov 2 10:00:08 2023 +0900
+
+    Cが自機移動追加
+
+[33mcommit 0379443b1aa45e6bc875cd9500edebbfbf9be436[m
+Merge: 5828b3a 75c424a
+Author: 19108-NIThakodate <19108@hakodate.kosen-ac.jp>
+Date:   Thu Nov 2 09:59:21 2023 +0900
+
+    衝突の修正
+
+[33mcommit 5828b3ab5866f302c26a417b37514ba72ff055a3[m
+Author: 19108-NIThakodate <19108@hakodate.kosen-ac.jp>
+Date:   Thu Nov 2 09:40:43 2023 +0900
+
+    android_01_lowを追加
+
+[33mcommit 1dc7e54c58bb3e89a735beea5b6c1a82c3733916[m
+Author: 19108-NIThakodate <19108@hakodate.kosen-ac.jp>
+Date:   Thu Nov 2 09:34:40 2023 +0900
+
+    android_01を追加
+
+[33mcommit 75c424a91f69b49e22d050f13641c457f9a7229c[m
+Author: kidachi-y <19062@hakodate.kosen-ac.jp>
+Date:   Thu Nov 2 09:31:58 2023 +0900
+
+    Cが自機を表示
+
+[33mcommit df43d8f0dd24ba15df3b6c61145083d5bdd4dfa5[m
+Merge: d8555a0 85dc5e3
+Author: kidachi-y <19062@hakodate.kosen-ac.jp>
+Date:   Thu Nov 2 09:19:40 2023 +0900
+
+    Cが自機を表示
+
+[33mcommit d8555a094ab11e2361d95ebe49ef213aad0203d3[m
+Merge: be9a405 985ec83
+Author: kidachi-y <19062@hakodate.kosen-ac.jp>
+Date:   Thu Nov 2 09:17:40 2023 +0900
+
+    Cが自機を表示
+
+[33mcommit 85dc5e311563594744cfd78e6b11f01376c49a1b[m
+Merge: fd022d3 985ec83
+Author: kikuchitakuto <19059@hakodate.kosen-ac.jp>
+Date:   Thu Oct 26 10:24:01 2023 +0900
+
+    衝突を修正
+
+[33mcommit be9a4057f0049cb1294a03cc2aec3880af0ce14a[m
+Author: kidachi-y <19062@hakodate.kosen-ac.jp>
+Date:   Thu Oct 26 10:22:26 2023 +0900
+
+    playerを追加
+
+[33mcommit fd022d32a84f9c85a5736ea419c95b0d9d24f866[m
+Author: kikuchitakuto <19059@hakodate.kosen-ac.jp>
+Date:   Thu Oct 26 10:22:22 2023 +0900
+
+    game.javaを追加
+
+[33mcommit a122aa9672515506e44659ca20f3d40a2759d402[m
+Author: kikuchitakuto <19059@hakodate.kosen-ac.jp>
+Date:   Thu Oct 26 10:20:26 2023 +0900
+
+    game.javaを追加
+
+[33mcommit 985ec8314d39a27e62fbe5b7a042752c48400350[m
+Author: 19108-NIThakodate <19108@hakodate.kosen-ac.jp>
+Date:   Thu Oct 26 10:17:23 2023 +0900
+
+    A:BU,mushroom,seAl,tateを削除
+
+[33mcommit b37df66dffd8632f19dc15a68f8fc88ffd79c63b[m
+Author: 19108-NIThakodate <19108@hakodate.kosen-ac.jp>
+Date:   Thu Oct 26 10:11:17 2023 +0900
+
+    A:衝突修正
+
+[33mcommit e99aaeadb5ab2837a068fb1ba9b583e3c0f85cee[m
+Merge: 55d33d7 2772807
+Author: kidachi-y <19062@hakodate.kosen-ac.jp>
+Date:   Thu Oct 26 10:08:28 2023 +0900
+
+    C:衝突修正
+
+[33mcommit 55d33d71c4b68fdc88d0404c48a6ad6357513f87[m
+Author: kidachi-y <19062@hakodate.kosen-ac.jp>
+Date:   Thu Oct 26 10:06:29 2023 +0900
+
+    Cのキャラ追加
+
+[33mcommit efdb7ac298c2ff83b842c90e35890a6c35dfe908[m
+Author: kidachi-y <19062@hakodate.kosen-ac.jp>
+Date:   Thu Oct 19 09:50:13 2023 +0900
+
+[33mcommit 277280746e5365c63210128f261f9f04ea9ad130[m
+Author: kikuchitakuto <19059@hakodate.kosen-ac.jp>
+Date:   Thu Oct 19 09:41:28 2023 +0900
+
+    Bがキャラ追加
+
+[33mcommit 2d3cb6629d495e45e66f6ffede490b87084b065e[m
+Merge: e8b974d 93ad5f4
+Author: kikuchitakuto <19059@hakodate.kosen-ac.jp>
+Date:   Thu Oct 19 09:16:08 2023 +0900
+
+    Bがキャラ追加
+
+[33mcommit 93ad5f488dea1c85d36a68e7ea354b162acaa265[m
+Merge: d6a3ab3 f74df17
+Author: 19108-NIThakodate <19108@hakodate.kosen-ac.jp>
+Date:   Thu Oct 12 09:47:11 2023 +0900
+
+    衝突の修正(A)
+
+[33mcommit d6a3ab330b4a65ed0c9e12f923462418a39eedb7[m
+Author: 19108-NIThakodate <19108@hakodate.kosen-ac.jp>
+Date:   Thu Oct 12 09:44:45 2023 +0900
+
+    衝突の修正(A)
+
+[33mcommit f74df176b2c54805c1aeb07981aaada2178f9a7d[m
+Merge: 90f4d6a 0e0db6d
+Author: kidachi-y <19062@hakodate.kosen-ac.jp>
+Date:   Thu Oct 12 09:36:47 2023 +0900
+
+    Cがキャラ追加
+
+[33mcommit 90f4d6aba98c17f1f9570861b16cb22accba9c0d[m
+Author: kidachi-y <19062@hakodate.kosen-ac.jp>
+Date:   Thu Oct 12 09:35:32 2023 +0900
+
+    Cがキャラ追加
+
+[33mcommit 6c08be07ff2cc4fd32921316cacdbff87b32a551[m
+Merge: 8e878db 32d464c
+Author: kidachi-y <19062@hakodate.kosen-ac.jp>
+Date:   Thu Oct 12 09:27:12 2023 +0900
+
+    Cがキャラ追加
+
+[33mcommit 0e0db6d33e6ddc41032e3e1ac637381d11ba16a6[m
+Merge: 2fd58a2 32d464c
+Author: atamao <19109@hakodate.kosen-ac.jp>
+Date:   Thu Oct 12 09:26:01 2023 +0900
+
+    pullした
+
+[33mcommit e8b974d7715de8e54e3af063c58b5d0fe864bb1b[m
+Author: kikuchitakuto <19059@hakodate.kosen-ac.jp>
+Date:   Thu Oct 5 10:17:25 2023 +0900
+
+    Bがキャラ追加
+
+[33mcommit 2fd58a23efea87bb029130b720fc6afba68929f9[m
+Author: atamao <19109@hakodate.kosen-ac.jp>
+Date:   Thu Oct 5 10:16:44 2023 +0900
+
+    Dがキャラ追加
+
+[33mcommit 8e878db475ed2783eaf3fba89b5f6cd392358d3d[m
+Author: kidachi-y <19062@hakodate.kosen-ac.jp>
+Date:   Thu Oct 5 10:16:41 2023 +0900
+
+    Cがキャラ追加
+
+[33mcommit 32d464cc5ff7eebdb400c95a9f259f4bc735b88f[m
+Author: 19108-NIThakodate <19108@hakodate.kosen-ac.jp>
+Date:   Thu Oct 5 10:16:25 2023 +0900
+
+    Aがキャラ追加
+
+[33mcommit a20e3b8257c255e1c4bb1d9595dba6541f01cd1d[m
+Author: 19108-NIThakodate <19108@hakodate.kosen-ac.jp>
+Date:   Thu Oct 5 10:06:41 2023 +0900
+
+    新規シナリオ作成
+
+[33mcommit 6d97ecec2c395ca8f586e7d6690eb6d491bc2bc9[m
+Author: 19108-NIThakodate <130424023+19108-NIThakodate@users.noreply.github.com>
+Date:   Thu Oct 5 09:39:11 2023 +0900
+
+    Create .gitignore
+
+[33mcommit a18c350ad1bc49107669eadc5cbb6c0098711457[m
+Author: 19108-NIThakodate <130424023+19108-NIThakodate@users.noreply.github.com>
+Date:   Thu Oct 5 09:35:29 2023 +0900
+
+    Initial commit

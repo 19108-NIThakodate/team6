@@ -6,13 +6,13 @@
  */
 public class SpawnPattern  
 {
-    private String enemyType;
-    private String pattern;
+    private int enemyType;
+    private int pattern;
     private int spawnX;
     private int spawnY;
     private int spawnTime;
     
-    public SpawnPattern(String enemyType, String pattern, int spawnX, int spawnY, int spawnTime)
+    public SpawnPattern(int enemyType, int pattern, int spawnX, int spawnY, int spawnTime)
     {
         this.enemyType = enemyType;
         this.pattern = pattern;
@@ -21,11 +21,11 @@ public class SpawnPattern
         this.spawnTime = spawnTime;
     }
     
-    public String getEnemyType(){
+    public int getEnemyType(){
         return enemyType;
     }
     
-    public String getPattern(){
+    public int getPattern(){
         return pattern;
     }
     

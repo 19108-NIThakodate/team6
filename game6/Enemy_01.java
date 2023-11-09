@@ -24,10 +24,12 @@ public class Enemy_01 extends Actor
     private int newHeight;
     
     
-    public Enemy_01() {
+    public Enemy_01(int pattern) {
+        //parameter
         health = 1;
         speed = 3;
-        scalePercentage = 0.15;
+        scalePercentage = 0.1;
+        this.pattern = pattern;
         
         timer = 0;
         
@@ -65,9 +67,9 @@ public class Enemy_01 extends Actor
             if(timer < 50){
                 setLocation( x-speed,y );
             }else if(timer < 100){
-                
+                setLocation( x+speed,y+speed);
             }
-            break;
+        break;
         }
     }
     

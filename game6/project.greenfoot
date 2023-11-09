@@ -6,6 +6,7 @@ class.title.image=board.jpg
 dependency1.from=title
 dependency1.to=game
 dependency1.type=UsesDependency
+<<<<<<< HEAD
 dependency2.from=MyWorld
 dependency2.to=player
 dependency2.type=UsesDependency
@@ -24,6 +25,15 @@ height=560
 package.numDependencies=1
 >>>>>>> 65f68aa0aa4a1e2591c2a7ff028203d444120380
 package.numTargets=6
+=======
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=1047
+package.numDependencies=1
+package.numTargets=7
+>>>>>>> ca0878c2a7a7b3ed6bc47f245bcb715266f6a8a8
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -67,21 +77,32 @@ target4.width=80
 target4.x=0
 target4.y=0
 target5.height=50
-target5.name=MyWorld
+target5.name=mushroom
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=80
 target5.x=0
 target5.y=0
 target6.height=50
-target6.name=player
+target6.name=MyWorld
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=80
 target6.x=0
 target6.y=0
+target7.height=50
+target7.name=player
+target7.showInterface=false
+target7.type=ClassTarget
+target7.width=80
+target7.x=0
+target7.y=0
 version=3.0.0
 width=974
+<<<<<<< HEAD
 world.lastInstantiated=title
+=======
+world.lastInstantiated=MyWorld
+>>>>>>> ca0878c2a7a7b3ed6bc47f245bcb715266f6a8a8
 xPosition=953
 yPosition=0

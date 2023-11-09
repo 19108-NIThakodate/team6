@@ -11,7 +11,10 @@ public class player extends Actor
     /**
      * Act - do whatever the Player wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    */
+   
+    private int flag_tama = 0;
+    
     public void act() 
     {
         int x = getX();
@@ -28,6 +31,19 @@ public class player extends Actor
         }
         if( Greenfoot.isKeyDown( "down" ) ){
             setLocation( x,y+4 );
-        }// Add your action code here.
+        }
+        if( Greenfoot.isKeyDown( "space" ) ){
+            setRotation(0);
+            move(1);
+        }
+        if( flag_tama > 0 ) flag_tama--;
+        if( Greenfoot.isKeyDown( "space" ) ){
+            if( flag_tama == 0 ){
+                getWorld().addObject( new TAMA(), getX(), getY() );
+                flag_tama = 50;
+            }
+        }
     }    
 }
+ 
+

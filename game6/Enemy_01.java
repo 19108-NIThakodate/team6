@@ -29,7 +29,7 @@ public class Enemy_01 extends Enemy
     public Enemy_01(int pattern, boolean drop_item) {
         //parameter
         isDestroyed = false;
-        health = 1;
+        health = 2;
         speed = 5;
         scalePercentage = 0.1;
         this.pattern = pattern;
@@ -73,10 +73,12 @@ public class Enemy_01 extends Enemy
     private void move_pattern(int x, int y, int timer, int pattern){
         switch(pattern){
         case 1:
-            if(timer < 50){
-                setLocation( x-speed,y );
+            if(timer < 60){
+                setLocation( x-speed, y );
             }else if(timer < 100){
-                setLocation( x+speed,y+speed);
+                setLocation( x+(speed-1), y+(speed-1) );
+            }else{
+                setLocation( x-speed, y );
             }
         break;
         }
@@ -98,6 +100,8 @@ public class Enemy_01 extends Enemy
                 }
                 
                 isDestroyed = true;
+            }else if(!isDestroyed){
+                Sound_hit.play();
             }
         }
         }

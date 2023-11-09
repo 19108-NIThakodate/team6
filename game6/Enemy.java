@@ -8,5 +8,5 @@ import greenfoot.*;
  */
 public class Enemy extends Actor
 {
-    
+    public GreenfootSound Sound_explosion = new GreenfootSound("sounds/Enemy/explosion.mp3");
 }

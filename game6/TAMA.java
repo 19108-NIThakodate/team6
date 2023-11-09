@@ -14,6 +14,8 @@ public class TAMA extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        int x = getX();
+        int y = getY();
+        setLocation( x+1,y );
     }    
 }

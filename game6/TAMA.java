@@ -16,6 +16,11 @@ public class TAMA extends Actor
     {
         int x = getX();
         int y = getY();
-        setLocation( x+1,y );
+        setLocation( x+10,y );
+        if(isAtEdge()){
+         getWorld().removeObject( this );
+        }
     }    
+    
+    
 }

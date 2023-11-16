@@ -81,6 +81,9 @@ public class Enemy_01 extends Enemy
                 setLocation( x-speed, y );
             }
         break;
+        case 2:
+            setLocation( x-speed, y );   
+        break;
         }
     }
     

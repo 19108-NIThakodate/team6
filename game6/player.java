@@ -21,10 +21,10 @@ public class player extends Actor
         int y = getY();
         setRotation(270);
         if( Greenfoot.isKeyDown( "left" ) ){
-            setLocation( x-2,y );
+            setLocation( x-3,y );
         }
         if( Greenfoot.isKeyDown( "right" ) ){
-            setLocation( x+2,y );
+            setLocation( x+3,y );
         }
         if( Greenfoot.isKeyDown( "up" ) ){
             setLocation( x,y-5 );
@@ -37,7 +37,7 @@ public class player extends Actor
         if( Greenfoot.isKeyDown( "space" ) ){
             if( flag_tama == 0 ){
                 getWorld().addObject( new TAMA(), getX(), getY() );
-                flag_tama = 5;
+                flag_tama = 9;
             }
         }
     }    

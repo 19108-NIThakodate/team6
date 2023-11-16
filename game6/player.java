@@ -38,6 +38,7 @@ public class player extends Actor
         }
         if( flag_tama > 0 ) flag_tama--;
         if( Greenfoot.isKeyDown( "space" ) ){
+            Greenfoot.playSound("8bitshot3.mp3");
             if( flag_tama == 0 ){
                 getWorld().addObject( new TAMA(), getX(), getY() );
                 flag_tama = 50;

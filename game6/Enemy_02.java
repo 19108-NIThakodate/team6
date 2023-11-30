@@ -29,7 +29,7 @@ public class Enemy_02 extends Enemy
     public Enemy_02(int pattern, boolean drop_item) {
         //parameter
         isDestroyed = false;
-        health = 2;
+        health = 1;
         speed = 5;
         scalePercentage = 0.1;
         this.pattern = pattern;
@@ -91,6 +91,7 @@ public class Enemy_02 extends Enemy
                 
                 if(drop_item){
                     //addObject();
+                    
                 }
                 
                 isDestroyed = true;

@@ -15,5 +15,11 @@ public class item01 extends Item
     public void act() 
     {
         // Add your action code here.
+        int x = getX();
+        int y = getY();
+        setLocation( x-2,y );
+        if( isAtEdge() ){
+            getWorld().removeObject( this );
+        }
     }    
 }

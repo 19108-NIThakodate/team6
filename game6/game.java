@@ -13,6 +13,12 @@ public class game extends World
     private int countSpawnTable;
     private ArrayList<SpawnPattern> spawnPatterns = new ArrayList<>();
     
+    GreenfootImage back;
+    GreenfootImage back_flop;
+    int back_dx = -1; // スクロール速度(マイナスにすると左から右)
+    int back_x = 0;
+    int back_width;
+    boolean flop = false;
     /**
      * Constructor for objects of class game.
      * 
@@ -23,14 +29,30 @@ public class game extends World
         super(600, 400, 1); 
         timer = 0;
         countSpawnTable = 0;
-
+        Greenfoot.playSound("stage.mp3");
         initializeSpawnPatterns();
+        
+        back = new GreenfootImage( "./images/雲海夜景.jpg" );
+        back_flop = new GreenfootImage( "./images/雲海反転夜景.jpg" );
+        back_width = back.getWidth();
     }
     
     public void act(){
         timer++;
-        
         spawnEnemy();
+        
+        back_x += back_dx;
+        if( back_x > 0){
+            back_x -= back_width;
+            flop = !flop;
+        }
+        if( back_x < -back_width ){
+            back_x += back_width;
+            flop = !flop;
+        }
+        getBackground().drawImage( flop ? back_flop : back, back_x, 0 );
+        getBackground().drawImage( flop ? back : back_flop, back_x+back_width, 0 );
+    
     }
     
     // control spawning.

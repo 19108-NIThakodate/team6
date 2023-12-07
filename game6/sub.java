@@ -31,10 +31,11 @@ public class sub extends Actor
             setLocation( x,y+speed );
         }
         
+        
         if( flag_tama > 0 ) flag_tama--;
         if( Greenfoot.isKeyDown( "space" ) ){
             if( flag_tama == 0 ){
-                getWorld().addObject( new TAMA(), getX(), getY() );
+                getWorld().addObject( new TAMA(), x,y  );
                 flag_tama = 9;
             }
         }// Add your action code here.

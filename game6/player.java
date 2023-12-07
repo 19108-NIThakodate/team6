@@ -48,9 +48,10 @@ public class player extends Actor
             getWorld().removeObject( actor );
             count++;
             if(count%2==0){
-                speed=5;
-            }else if(count%2==1){
                 speed=3;
+                getWorld().addObject( new sub(), getX()-20, getY()+40 );
+            }else if(count%2==1){
+                speed=5;
             }
             
         }    

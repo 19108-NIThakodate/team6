@@ -27,21 +27,18 @@ public class player extends Actor
             setLocation( x+2,y );
         }
         if( Greenfoot.isKeyDown( "up" ) ){
-            setLocation( x,y-4 );
+            setLocation( x,y-5 );
         }
         if( Greenfoot.isKeyDown( "down" ) ){
-            setLocation( x,y+4 );
+            setLocation( x,y+5 );
         }
-        if( Greenfoot.isKeyDown( "space" ) ){
-            setRotation(0);
-            move(1);
-        }
+        
         if( flag_tama > 0 ) flag_tama--;
         if( Greenfoot.isKeyDown( "space" ) ){
             Greenfoot.playSound("8bitshot3.mp3");
             if( flag_tama == 0 ){
                 getWorld().addObject( new TAMA(), getX(), getY() );
-                flag_tama = 50;
+                flag_tama = 5;
             }
         }
     }    

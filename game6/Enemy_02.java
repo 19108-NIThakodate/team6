@@ -1,12 +1,12 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 /**
- * Write a description of class Enemy_01 here.
+ * Write a description of class Enemy_02 here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Enemy_01 extends Enemy
+public class Enemy_02 extends Enemy
 {
     //status
     private boolean isDestroyed;
@@ -26,7 +26,7 @@ public class Enemy_01 extends Enemy
     private int newHeight;
     
     
-    public Enemy_01(int pattern, boolean drop_item) {
+    public Enemy_02(int pattern, boolean drop_item) {
         //parameter
         isDestroyed = false;
         health = 2;
@@ -73,13 +73,7 @@ public class Enemy_01 extends Enemy
     private void move_pattern(int x, int y, int timer, int pattern){
         switch(pattern){
         case 1:
-            if(timer < 60){
-                setLocation( x-speed, y );
-            }else if(timer < 100){
-                setLocation( x+(speed-1), y+(speed-1) );
-            }else{
-                setLocation( x-speed, y );
-            }
+            
         break;
         }
     }

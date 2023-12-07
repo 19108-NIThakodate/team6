@@ -28,6 +28,7 @@ public class MyWorld extends World
         World game = new game();
         Greenfoot.setWorld( game );
         addObject( new start(), 500,500);
+
     }
 }
 }

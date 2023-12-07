@@ -1,27 +1,23 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Player here.
+ * Write a description of class sub here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class player extends Actor
+public class sub extends Actor
 {
     /**
-     * Act - do whatever the Player wants to do. This method is called whenever
+     * Act - do whatever the sub wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
-    */
-   
+     */
     private int flag_tama = 0;
-    int speed=3;
-    int count=-1;
     public void act() 
     {
         int x = getX();
         int y = getY();
-        
-        setRotation(270);
+        int speed = 3;
         if( Greenfoot.isKeyDown( "left" ) ){
             setLocation( x-speed+1,y );
         }
@@ -35,28 +31,13 @@ public class player extends Actor
             setLocation( x,y+speed );
         }
         
+        
         if( flag_tama > 0 ) flag_tama--;
         if( Greenfoot.isKeyDown( "space" ) ){
-            Greenfoot.playSound("8bitshot3.mp3");
             if( flag_tama == 0 ){
-                getWorld().addObject( new TAMA(), getX(), getY() );
+                getWorld().addObject( new TAMA(), x,y  );
                 flag_tama = 9;
             }
-        }
-        
-        Actor actor = getOneIntersectingObject( item01.class );
-        if( actor != null ){
-            getWorld().removeObject( actor );
-            count++;
-            if(count%2==0){
-                speed=3;
-                getWorld().addObject( new sub(), getX()-20, getY()+40 );
-            }else if(count%2==1){
-                speed=5;
-            }
-            
-        }    
+        }// Add your action code here.
     }    
 }
- 
-

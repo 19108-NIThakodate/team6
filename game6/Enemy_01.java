@@ -29,7 +29,7 @@ public class Enemy_01 extends Enemy
     public Enemy_01(int pattern, boolean drop_item) {
         //parameter
         isDestroyed = false;
-        health = 2;
+        health = 1;
         speed = 5;
         scalePercentage = 0.1;
         this.pattern = pattern;
@@ -81,6 +81,9 @@ public class Enemy_01 extends Enemy
                 setLocation( x-speed, y );
             }
         break;
+        case 2:
+            setLocation( x-speed, y );   
+        break;
         }
     }
     
@@ -92,12 +95,13 @@ public class Enemy_01 extends Enemy
         if(hit_bullet != null){
             health--;
             if( !isDestroyed && health <= 0 ){
-                getWorld().removeObject(this);
-                Sound_explosion.play();
-                
                 if(drop_item){
                     //addObject();
+                    getWorld().addObject(new item01(), getX(), getY());
                 }
+                
+                getWorld().removeObject(this);
+                Sound_explosion.play();
                 
                 isDestroyed = true;
             }else if(!isDestroyed){

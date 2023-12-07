@@ -62,6 +62,7 @@ public class game extends World
         spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 70, false));
         spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 90, false));
         spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 110, true));
+        spawnPatterns.add(new SpawnPattern(1, 2, 700, 100, 130, false));
     }
     
     private void spawnEnemy(){

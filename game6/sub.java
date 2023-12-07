@@ -18,18 +18,20 @@ public class sub extends Actor
         int x = getX();
         int y = getY();
         int speed = 3;
-        if( Greenfoot.isKeyDown( "left" ) ){
+        if( x>=10 && Greenfoot.isKeyDown( "left" ) ){
             setLocation( x-speed+1,y );
         }
         if( Greenfoot.isKeyDown( "right" ) ){
             setLocation( x+speed-1,y );
         }
-        if( Greenfoot.isKeyDown( "up" ) ){
+        if( y>=30 &&  Greenfoot.isKeyDown( "up" ) ){
             setLocation( x,y-speed );
         }
-        if( Greenfoot.isKeyDown( "down" ) ){
-            setLocation( x,y+speed );
+        if( y<=390 && Greenfoot.isKeyDown( "down" ) ){
+               setLocation( x,y+speed );
         }
+        
+        
         
         
         if( flag_tama > 0 ) flag_tama--;

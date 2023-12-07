@@ -22,18 +22,19 @@ public class player extends Actor
         int y = getY();
         
         setRotation(270);
-        if( Greenfoot.isKeyDown( "left" ) ){
+        if( x>=30 && Greenfoot.isKeyDown( "left" ) ){
             setLocation( x-speed+1,y );
         }
         if( Greenfoot.isKeyDown( "right" ) ){
             setLocation( x+speed-1,y );
         }
-        if( Greenfoot.isKeyDown( "up" ) ){
+        if(Greenfoot.isKeyDown( "up" ) ){
             setLocation( x,y-speed );
         }
-        if( Greenfoot.isKeyDown( "down" ) ){
+        if(y<=360 && Greenfoot.isKeyDown( "down" )){
             setLocation( x,y+speed );
         }
+        
         
         if( flag_tama > 0 ) flag_tama--;
         if( Greenfoot.isKeyDown( "space" ) ){
@@ -49,7 +50,7 @@ public class player extends Actor
             count++;
             if(count%2==0){
                 speed=3;
-                getWorld().addObject( new sub(), getX()-20, getY()+40 );
+                getWorld().addObject( new sub(), getX()-20, getY()+30 );
             }else if(count%2==1){
                 speed=5;
             }

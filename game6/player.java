@@ -61,7 +61,7 @@ public class player extends Actor
                 getWorld().addObject( new sub(), getX()-20, getY()+30 );
             }else if(count%3==1){//speed up
                 speed=5;
-                shoot_type=0;
+                shoot_type=0;  
             }else if(count%3==2){//add range
                 speed=3;
                 shoot_type=1;

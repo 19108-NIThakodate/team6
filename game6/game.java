@@ -57,12 +57,30 @@ public class game extends World
     
     // control spawning.
     private void initializeSpawnPatterns(){
+        //wave1
         spawnPatterns.add(new SpawnPattern(0, 0, 100, 100, 1, false));
         spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 50, false));
         spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 70, false));
         spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 90, false));
         spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 110, true));
-        spawnPatterns.add(new SpawnPattern(1, 2, 700, 100, 130, false));
+        //wave2
+        spawnPatterns.add(new SpawnPattern(1, 2, 700, 200, 150, false));
+        spawnPatterns.add(new SpawnPattern(1, 2, 700, 200, 170, false));
+        spawnPatterns.add(new SpawnPattern(1, 2, 700, 200, 190, false));
+        spawnPatterns.add(new SpawnPattern(1, 2, 700, 200, 210, true));
+        //wave3
+        spawnPatterns.add(new SpawnPattern(2, 1, 700, 100, 270, false));
+        spawnPatterns.add(new SpawnPattern(2, 1, 700, 50, 320, false));
+        spawnPatterns.add(new SpawnPattern(2, 1, 700, 150, 370, true));
+        //wave4
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 390, false));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 50, 410, false));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 430, false));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 50, 450, true));
+        //wave5
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 50, 480, false));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 75, 480, true));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 480, false));
     }
     
     private void spawnEnemy(){
@@ -83,6 +101,9 @@ public class game extends World
                 break;
                 case 1: //Enemy_01
                     addObject(new Enemy_01(pattern, drop_item), spawnX, spawnY);
+                break;
+                case 2: //Enemy_02
+                    addObject(new Enemy_02(pattern, drop_item), spawnX, spawnY);
                 break;
                 }
                 countSpawnTable++;           

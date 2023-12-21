@@ -45,6 +45,7 @@ public class player extends Actor
         }
         
         Actor actor = getOneIntersectingObject( item01.class );
+        
         if( actor != null ){
             getWorld().removeObject( actor );
             count++;

@@ -17,7 +17,7 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        addObject( new start(), 300, 200 );
+        addObject( new enter(), 300, 200 );
         
         
     }
@@ -27,7 +27,7 @@ public class MyWorld extends World
         Greenfoot.playSound("gamestart.mp3");
         World game = new game();
         Greenfoot.setWorld( game );
-        addObject( new start(), 500,500);
+        addObject( new enter(), 100,100);
 
     }
 }

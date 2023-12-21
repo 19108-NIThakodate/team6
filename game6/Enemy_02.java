@@ -73,9 +73,22 @@ public class Enemy_02 extends Enemy
     private void move_pattern(int x, int y, int timer, int pattern){
         switch(pattern){
         case 1:
-            
+            if(timer <= 80){
+                trackPlayer();
+            }else{
+                setLocation( x-speed, y );
+            }
         break;
         }
+    }
+    
+    // function of move
+    private void trackPlayer(){
+        player subject = (player)getWorld().getObjects(player.class).get(0);
+        
+        int subjectY = subject.getY();
+        
+        setLocation( getX()-speed, subjectY );
     }
     
     // function of checking enemy status.
@@ -86,13 +99,13 @@ public class Enemy_02 extends Enemy
         if(hit_bullet != null){
             health--;
             if( !isDestroyed && health <= 0 ){
-                getWorld().removeObject(this);
-                Sound_explosion.play();
-                
                 if(drop_item){
                     //addObject();
-                    
+                    getWorld().addObject(new item01(), getX(), getY());
                 }
+                
+                getWorld().removeObject(this);
+                Sound_explosion.play();
                 
                 isDestroyed = true;
             }else if(!isDestroyed){

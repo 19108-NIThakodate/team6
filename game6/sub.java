@@ -18,18 +18,21 @@ public class sub extends Actor
         int x = getX();
         int y = getY();
         int speed = 3;
-        if( Greenfoot.isKeyDown( "left" ) ){
+        int count=0;
+        if( x>=10 && Greenfoot.isKeyDown( "left" ) ){
             setLocation( x-speed+1,y );
         }
         if( Greenfoot.isKeyDown( "right" ) ){
             setLocation( x+speed-1,y );
         }
-        if( Greenfoot.isKeyDown( "up" ) ){
+        if( y>=30 &&  Greenfoot.isKeyDown( "up" ) ){
             setLocation( x,y-speed );
         }
-        if( Greenfoot.isKeyDown( "down" ) ){
-            setLocation( x,y+speed );
+        if( y<=390 && Greenfoot.isKeyDown( "down" ) ){
+               setLocation( x,y+speed );
         }
+        
+        
         
         
         if( flag_tama > 0 ) flag_tama--;
@@ -38,6 +41,15 @@ public class sub extends Actor
                 getWorld().addObject( new TAMA(), x,y  );
                 flag_tama = 9;
             }
-        }// Add your action code here.
+        }
+        
+        Actor get_item = getOneIntersectingObject( item01.class );
+        if( get_item != null ){
+            count++;
+            if(count==1)
+                getWorld().removeObject(this);
+            if(count==4)
+                count=0;
+        } 
     }    
 }

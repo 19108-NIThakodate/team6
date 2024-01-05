@@ -73,6 +73,9 @@ public class Enemy_01 extends Enemy
     private void move_pattern(int x, int y, int timer, int pattern){
         switch(pattern){
         case 1:
+            setLocation( x-speed, y );
+        break;
+        case 2:
             if(timer < 60){
                 setLocation( x-speed, y );
             }else if(timer < 100){
@@ -81,8 +84,14 @@ public class Enemy_01 extends Enemy
                 setLocation( x-speed, y );
             }
         break;
-        case 2:
-            setLocation( x-speed, y );   
+        case 3:
+            if(timer < 60){
+                setLocation( x-speed, y );
+            }else if(timer < 100){
+                setLocation( x+(speed-1), y+(speed+1) );
+            }else{
+                setLocation( x-speed, y );
+            }
         break;
         }
     }

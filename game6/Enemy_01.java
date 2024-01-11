@@ -101,7 +101,8 @@ public class Enemy_01 extends Enemy
     private void getDamage(){
         if(!isDestroyed){
         Actor hit_bullet = getOneIntersectingObject(TAMA.class);
-        if(hit_bullet != null){
+        Actor hit_bullet2 = getOneIntersectingObject(TAMA2.class);
+        if(hit_bullet != null || hit_bullet2 != null){
             health--;
             if( !isDestroyed && health <= 0 ){
                 if(drop_item){

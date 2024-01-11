@@ -54,7 +54,7 @@ public class game extends World
         getBackground().drawImage( flop ? back_flop : back, back_x, 0 );
         getBackground().drawImage( flop ? back : back_flop, back_x+back_width, 0 );
         
-        showText("score:" + score, 100, 20);
+        //showText("score:" + score, 100, 20);
     }
     
     // control spawning.

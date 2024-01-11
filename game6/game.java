@@ -11,6 +11,7 @@ public class game extends World
 {
     private int timer;
     private int countSpawnTable;
+    private int score = 0;
     private ArrayList<SpawnPattern> spawnPatterns = new ArrayList<>();
     
     GreenfootImage back;
@@ -29,8 +30,8 @@ public class game extends World
         super(600, 400, 1); 
         timer = 0;
         countSpawnTable = 0;
-        Greenfoot.playSound("stage.mp3");
         initializeSpawnPatterns();
+        Greenfoot.playSound("stage.mp3");
         
         back = new GreenfootImage( "./images/雲海夜景.jpg" );
         back_flop = new GreenfootImage( "./images/雲海反転夜景.jpg" );
@@ -52,7 +53,8 @@ public class game extends World
         }
         getBackground().drawImage( flop ? back_flop : back, back_x, 0 );
         getBackground().drawImage( flop ? back : back_flop, back_x+back_width, 0 );
-    
+        
+        showText("score:" + score, 100, 20);
     }
     
     // control spawning.
@@ -78,9 +80,20 @@ public class game extends World
         spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 430, false));
         spawnPatterns.add(new SpawnPattern(1, 1, 700, 50, 450, true));
         //wave5
-        spawnPatterns.add(new SpawnPattern(1, 1, 700, 50, 480, false));
-        spawnPatterns.add(new SpawnPattern(1, 1, 700, 75, 480, true));
-        spawnPatterns.add(new SpawnPattern(1, 1, 700, 100, 480, false));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 50, 479, false));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 150, 480, true));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 250, 481, false));
+        //wave6
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 50, 549, false));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 250, 550, false));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 50, 579, false));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 250, 580, true));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 50, 609, false));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 250, 610, false));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 50, 639, false));
+        spawnPatterns.add(new SpawnPattern(1, 1, 700, 250, 640, true));
+        //wave7
+        spawnPatterns.add(new SpawnPattern(3, 1, 700, 250, 900, false));
     }
     
     private void spawnEnemy(){
@@ -105,9 +118,20 @@ public class game extends World
                 case 2: //Enemy_02
                     addObject(new Enemy_02(pattern, drop_item), spawnX, spawnY);
                 break;
+                case 3: //Boss_01
+                    addObject(new Boss_01(pattern, drop_item), spawnX, spawnY);
+                break;
                 }
                 countSpawnTable++;           
             }
         }
+    }
+    
+    public int getScore(){
+        return score;
+    }
+    
+    public void setScore(int score){
+        this.score = score;
     }
 }

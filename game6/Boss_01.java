@@ -29,7 +29,7 @@ public class Boss_01 extends Enemy
     public Boss_01(int pattern, boolean drop_item) {
         //parameter
         isDestroyed = false;
-        health = 50;
+        health = 20;
         speed = 5;
         scalePercentage = 0.3;
         this.pattern = pattern;
@@ -81,7 +81,7 @@ public class Boss_01 extends Enemy
     private void move_pattern(int x, int y, int timer, int pattern){
         switch(pattern){
         case 1:
-            if(timer < 60){
+            if(timer < 30){
                 setLocation( x-speed, y );
             }else{
                 trackPlayer();

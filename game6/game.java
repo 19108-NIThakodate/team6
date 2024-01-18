@@ -104,6 +104,43 @@ public class game extends World
         spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1020, false));
         spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1030, false));
         
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1100, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1110, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1120, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1130, false));
+        spawnPatterns.add(new SpawnPattern(2, 1, 700, 250, 1140, true));
+        
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1230, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1240, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1250, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1270, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1280, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1290, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1310, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1320, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1330, false));
+        
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1400, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1410, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1420, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1430, false));
+        spawnPatterns.add(new SpawnPattern(2, 1, 700, 250, 1440, true));
+        
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1530, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1540, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1550, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1570, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1580, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1590, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1610, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1620, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1630, false));
+        
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1700, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1710, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1720, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1730, false));
+        spawnPatterns.add(new SpawnPattern(2, 1, 700, 250, 1740, true));
     }
     
     private void spawnEnemy(){

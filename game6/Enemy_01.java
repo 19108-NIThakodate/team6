@@ -93,7 +93,22 @@ public class Enemy_01 extends Enemy
                 setLocation( x-speed, y );
             }
         break;
+        case 4:
+            if(timer == 3){
+                trackPlayer();    
+            }else{
+                setLocation( x-(speed+2), y );
+            }
+        break;
         }
+    }
+    
+    private void trackPlayer(){
+        player subject = (player)getWorld().getObjects(player.class).get(0);
+        
+        int subjectY = subject.getY();
+        
+        setLocation( getX()-(speed+2), subjectY );
     }
     
     // function of checking enemy status.

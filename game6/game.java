@@ -94,6 +94,16 @@ public class game extends World
         spawnPatterns.add(new SpawnPattern(1, 1, 700, 250, 640, true));
         //wave7
         spawnPatterns.add(new SpawnPattern(3, 1, 700, 250, 900, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 930, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 940, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 950, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 970, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 980, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 990, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1010, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1020, false));
+        spawnPatterns.add(new SpawnPattern(1, 4, 700, 250, 1030, false));
+        
     }
     
     private void spawnEnemy(){

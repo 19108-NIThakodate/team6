@@ -35,6 +35,7 @@ public class game extends World
         
         back = new GreenfootImage( "./images/雲海夜景.jpg" );
         back_flop = new GreenfootImage( "./images/雲海反転夜景.jpg" );
+    
         back_width = back.getWidth();
     }
     
